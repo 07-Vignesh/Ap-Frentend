@@ -21,6 +21,8 @@ import { ClerkProvider } from '@clerk/clerk-react'
 import CartPage from './routes/card';
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
+const frontendApi = import.meta.env.VITE_CLERK_FRONTEND_API; // optional
+
 
 
 
@@ -103,7 +105,10 @@ path: '/',
 ReactDOM.createRoot(document.getElementById('root')).render(
 
   <React.StrictMode>
-    <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
+    <ClerkProvider publishableKey={PUBLISHABLE_KEY}
+          frontendApi={frontendApi} // optional, helps in some cases like localhost
+
+    >
     <RouterProvider router={router} />
 </ClerkProvider>
   </React.StrictMode>,
