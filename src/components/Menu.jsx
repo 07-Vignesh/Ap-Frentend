@@ -8,7 +8,7 @@ const Menubar = () => {
       {/* Logo */}
      
       {/* Vertical Menu */}
-      <div className=" p-5 mt-6 flex flex-col space-y-12 ">
+      <div className=" p-5 mt-6 flex flex-col space-y-14 ">
            <div className="tooltip">
   <div className="tooltip-content mx-3 bg-transparent">
     <div className="animate-bounce text-orange-400 -rotate-10  text-xl font-black">Home!</div>
