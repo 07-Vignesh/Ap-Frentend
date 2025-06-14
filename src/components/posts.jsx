@@ -200,7 +200,7 @@ useEffect(() => {
               {( isSignedIn ==true) &&(
                 <div className="card-actions justify-end ">
                   {!isAdmin && (
-                  <button className="btn btn-accent my-2 mr-26  " onClick={() => handleAddToCart(item)}>
+                  <button className="btn btn-accent my-2 mr-39  " onClick={() => handleAddToCart(item)}>
       Add to Cart
     </button>)}
     
@@ -218,7 +218,7 @@ useEffect(() => {
                 {( isSignedIn==false) &&(
                 <div className="card-actions justify-end">
                   <Link to="/login">
-                        <button className="btn btn-accent my-2 mr-28  " onClick={() => handleAddToCart(item)}>
+                        <button className="btn btn-accent my-2 mr-39  " onClick={() => handleAddToCart(item)}>
       Add to Cart
     </button>
          
